@@ -1,0 +1,668 @@
+/*=================== section-intro start ====================*/
+.section-intro{
+
+  &__style{
+    margin-bottom: 14px;
+  }
+}
+/*=================== section-intro end ====================*/
+
+
+/*=================== home banner start ====================*/
+.home-banner{
+  position: relative;
+
+  h4,h1,a{
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  h1{
+    font-size: 27px;
+    margin-bottom: 35px;
+
+    @media(min-width: 600px){
+      font-size: 37px;
+    }
+
+    @media(min-width: 992px){
+      font-size: 70px;
+      margin-bottom: 45px;
+    }
+  }
+
+  &-area{
+    height: 500px;
+    background: url('../../assets/images/header-bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    @media(min-width: 992px){
+      height: 600px;
+    }
+
+    @media(min-width: 1200px){
+      height: 970px;
+    }
+
+    .home-banner{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);              
+
+      @media(min-width: 992px){
+        top: 44%;
+        transform: translateX(-50%);        
+      }
+    }
+
+
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(1, 2, 11, 0.7);
+      z-index: -1;
+    }
+  }
+
+  &-btn{
+    border:2px solid $primary-color;
+    padding: 10px 45px;
+
+    &:hover{
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+}
+/*=================== home banner end ====================*/
+
+
+
+/*=================== home search form start ====================*/
+.form{
+
+  &-search{
+    max-width: 972px;
+    background: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px 25px 20px 25px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1); 
+
+    @media(min-width: 992px){
+      &-position{
+        position: relative;
+        bottom: 104px;
+        z-index: 1;
+      }
+    }
+
+    .form-control{
+      font-size: 14px;
+      color: #999999;
+      border-radius: 0;
+      height: 50px;
+      padding-left: 18px;
+      border-color: #ECECEC;
+
+      &:focus{
+        outline: 0;
+        box-shadow: none;
+      }
+
+      &::placeholder{
+        color: #999999;
+      }
+    }
+
+    .form-group{
+      margin-bottom: 20px;
+
+      .nice-select{
+        margin-bottom: 20px;
+      }
+    }
+
+    button{
+      width: 100%;
+      font-size: 13px;
+      font-family: $title-font;
+      font-weight: 700;
+      border: 0;
+      background: $primary-color;
+      height: 50px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-select-custom{
+    width: 100%;
+
+    select{
+      width: 100%;
+      height: 50px;
+      // margin: 8px 0;
+      border: 0;
+      border: 1px solid #ECECEC;
+      // border-top: 4px solid black;
+      background: #fff url('../../assets/images/down-arrow.png') no-repeat;
+      background-size: 11px;
+      background-position:  right 15px center;
+      padding-left: 18px;
+      color: #999999;
+      font-size: 14px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      &:focus{
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+}
+/*=================== home search form end ====================*/
+
+
+/*=================== welcome section start ====================*/
+.welcome{
+  padding-top: 40px;
+
+  &-images{
+    .card{
+      border-radius: 0;
+      border: 0;
+      margin: 0 4px 4px 0;
+
+      img{
+
+        @media(max-width: 991px){
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  &-content{
+
+    @media(min-width: 991px){
+      padding-left: 60px;
+    }
+  }
+}
+/*=================== welcome section end ====================*/
+
+
+/*=================== explore section start ====================*/
+.card-explore{
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.2); 
+  transition: all .4s ease;
+
+  .card-img{
+    border-radius: 0;
+  }
+
+  &__img{
+    width: 100%;
+    position: relative;
+
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      clip-path: polygon(0 83%, 0% 100%, 100% 100%);
+      background: #fff;
+      width: 100%;
+      height: 190px;
+    }
+
+    img{
+      padding-bottom: 1px;
+    }
+  }
+
+  .card-body{
+    padding: 5px 18px 35px 40px;
+  }
+
+  &__price{
+    font-size: 40px;
+
+    sub{
+      font-size: 18px;
+    }
+  }
+
+  &__title{
+    font-size: 24px;
+    margin: 12px 0 18px 0;
+    
+    a{
+      color: $title-color;
+      transition: color .2s ease;
+    }
+  }
+
+  &__link{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-weight: 700;
+    color: $black;
+    transition: color .2s ease;
+
+    i,span{
+      padding-left: 3px;
+      transition: all .35s ease;
+    }
+  }
+
+  &:hover{
+
+    a{
+      color: $primary-color;
+    }
+
+    .card-explore__link{
+
+      i,span{
+        padding-left: 10px;
+      }
+    }
+  }
+}
+/*=================== explore section end ====================*/
+
+
+/*=================== testimonial section start ====================*/
+.testi-carousel{
+
+  .owl-stage-outer{
+    padding: 50px 0;
+  }
+
+  .owl-item{
+    overflow: hidden;
+  }
+
+  &__item{
+    background: #f7f9f9;
+    padding: 30px 25px;
+    transition: all .3s ease;
+
+    .media-body{
+
+      p{
+        margin-bottom: 12px;
+      }
+    }
+
+    &::after{
+      content: '';
+      width: 0; 
+      height: 0; 
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: 15px solid #ffffff;
+      border-left: 500px solid rgba(255, 255, 255, 0.13);
+      /* Maintain smooth edge of triangle in FF */
+      -moz-transform: scale(.9999);
+    }
+
+    &:hover{
+      box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.2); 
+      background: #fff;
+    }
+  }
+
+  &__img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  &__intro{
+    h3{
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+
+    p{
+      font-size: 14px;
+      color: #999999;
+    }
+  }
+
+  .owl-dots{
+
+    .owl-dot{
+
+      span{
+        background: #cacccf;
+      }
+    }
+
+    .owl-dot.active{
+      span{
+        width: 12px;
+        height: 12px;
+        background: $primary-color;
+      }
+    }
+  }
+}
+
+/*=================== testimonial section end ====================*/
+
+
+
+
+/*=================== news section start ====================*/
+.card-news{
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.2); 
+  transition: all .4s ease;
+
+  &__info{
+    margin-bottom: 10px;
+
+    li{
+      display: inline-block;
+      font-size: 14px;
+      color: #999999;
+
+      &:not(:last-child){
+        margin-right: 13px;
+      }
+
+      .news-icon{
+        font-size: 12px;
+        color: #cca772;
+        margin-right: 5px;
+      }
+
+      a{
+        color: #999999;
+      }
+    }
+  }
+
+  .card-img{
+    border-radius: 0;
+    padding-bottom: 1px;
+  }
+
+  &__img{
+    width: 100%;
+    position: relative;
+
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      clip-path: polygon(0 100%, 100% 100%, 100% 83%);      
+      background: #fff;
+      width: 100%;
+      height: 190px;
+    }
+  }
+
+  .card-body{
+    padding: 18px 20px 35px 40px;
+  }
+
+  &__price{
+    font-size: 40px;
+
+    sub{
+      font-size: 23px;
+    }
+  }
+
+  &__title{
+    font-size: 24px;
+    margin: 12px 0 18px 0;
+    font-weight: 700;
+    
+    a{
+      color: $title-color;
+      transition: color .2s ease;
+    }
+  }
+
+  &__link{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-weight: 700;
+    color: $black;
+    transition: color .2s ease;
+
+    i,span{
+      padding-left: 3px;
+      transition: all .35s ease;
+    }
+  }
+
+  &:hover{
+
+    .card-news__title a{
+      color: $primary-color;
+    }
+
+    .card-news__link{
+
+      i,span{
+        padding-left: 10px;
+      }
+    }
+  }
+}
+/*=================== news section end ====================*/
+
+
+
+
+/*=================== video section start ====================*/
+.video-area{
+  background: url('../../assets/images/video-bg.png') left center no-repeat;
+  background-size: cover;
+  padding: 50px 10px;
+  position: relative;
+  z-index: 1;
+
+  @media(min-width: 750px){
+    padding: 90px 10px;
+  }
+
+  @media(min-width: 1000px){
+    padding: 175px 10px;
+  }
+
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 0, 0, 0.3);
+    z-index: -1;
+  }
+
+  h3{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    @media(min-width: 600px){
+      font-size: 50px;
+    }
+  }
+
+  p{
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+  .play-btn{
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    margin-bottom: 18px;
+    // position: relative;
+
+    img{
+      margin-top: 34px;
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    }
+
+    
+    // margin-bottom: 15px;
+    // transform: scale(.8);
+
+    // @media(min-width: 800px){
+    //   transform: scale(1);
+    // }
+  }
+}
+
+/*=================== special section end ====================*/
+.card-special{
+  padding: 45px 35px;
+  border: 0;
+  border-radius: 0;
+  transition: all .4s ease;
+
+  &__icon{
+    font-size: 24px;
+    color: $primary-color;
+    margin-right: 13px;
+  }
+
+  &__title{
+    margin: 0;
+    font-weight: 400;
+    transition: all .4s ease;
+  }
+
+  .card-body{
+    padding: 0;
+    
+    p{
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover{
+    background: $primary-color;
+    color: #fff;
+
+    .card-special__icon,.card-special__title{
+      color: #fff;
+    }
+  }
+}
+/*=================== special section start ====================*/
+
+
+/* Start Video Play css
+============================================================================================ */
+
+.video-play-button {
+  position: relative;
+  box-sizing: content-box;
+  display: inline-block;
+  width: 32px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 46px 8px 18px 28px;
+  transform: scale(.8);
+
+  @media(min-width: 800px){
+    transform: scale(1);
+    margin-bottom: 10px;
+  }
+
+  &:before,
+  &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include transform(translate(-50%, -50%));
+      display: block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+  }
+  &:before {
+      z-index: 0;
+      @include animation(pulse-border 2000ms ease-out infinite);
+  }
+  &:after {
+      z-index: 1;
+      @include transition(all 200ms ease);
+  }
+  span {
+      display: block;
+      position: relative;
+      z-index: 3;
+      width: 0;
+      height: 0;
+      border-left: 16px solid $primary-color;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+  }
+  &:hover {
+      &:after {
+          background-color: darken($primary-color, 10%);
+      }
+  }
+}
+
+@include keyframes(pulse-border) {
+  0% {
+      @include transform(translate(-50%, -50%) translateZ(0) scale(1));
+      opacity: 0.7;
+  }
+  100% {
+      @include transform(translate(-50%, -50%) translateZ(0) scale(1.5));
+      opacity: 0.1;
+  }
+}
+
+/* End Video Play css
+============================================================================================ */

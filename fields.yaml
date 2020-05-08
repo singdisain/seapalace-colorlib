@@ -1,0 +1,156 @@
+tabs:
+    fields:
+        site_title:
+            tab: General
+            label: Title
+            span: left
+            type: text
+            default: Rehomes - Real Estate
+            comment: Used at site title
+        site_logo_section:
+            tab: General
+            label: Logo
+            span: right
+            type: section
+        site_logo:
+            tab: General
+            span: right
+            comment: Please image size (e.g. 256px x 42px)
+            type: fileupload
+            mode: image
+            imageWidth: 256
+            imageHeight: 42
+        site_locale:
+            tab: General
+            label: Locale
+            span: left
+            type: text
+            default: en
+            comment: Used for HTML language parameter
+        site_info_section:
+            tab: General
+            label: Site Question Info
+            type: section
+        site_info_call_switch:
+            tab: General
+            span: left
+            label: Visible Call info @Header
+            type: switch
+            default: true
+        site_info_mail_switch:
+            tab: General
+            span: right
+            label: Visible Mail info @Header
+            type: switch
+            default: true
+        site_info_call_headline:
+            tab: General
+            label: Telephone Headline
+            span: left
+            type: text
+            default: Have any question?
+        site_info_mail_headline:
+            tab: General
+            label: Email Headline
+            span: right
+            type: text
+            default: Have any question?
+        site_info_call:
+            tab: General
+            label: Telephone
+            span: left
+            type: text
+            default: +12 365 5233
+            comment: Used for telephone link
+        site_info_mail:
+            tab: General
+            label: Email
+            span: right
+            type: text
+            default: your@address.mail
+            comment: Used for mail link
+        footer:
+            tab: General
+            label: Footer
+            type: text
+            default: "Your website. All Rights Reserved."
+        intro_social_section:
+            tab: General
+            label: Social menu sections
+            type: section
+        footer_social_menu:
+            tab: General
+            span: right
+            label: Visible Social menu in Footer
+            type: switch
+            default: true
+        intro_social_menu:
+            tab: General
+            span: left
+            label: Visible Social menu in Header
+            type: switch
+            default: true
+        social_link_section:
+            tab: General
+            label: Social links sections
+            type: section
+        youtube_link_switch:
+            tab: General
+            label: Visible Youtube in Social menu Header
+            type: switch
+            default: true
+        youtube_link:
+            tab: General
+            label: Youtube
+            type: text
+            default: "https://youtube.com"
+        facebook_link_switch:
+            tab: General
+            label: Visible Facebook in Social menu Header
+            type: switch
+            default: true
+        facebook_link:
+            tab: General
+            label: Facebook
+            type: text
+            default: "https://facebook.com"
+        linkedin_link_switch:
+            tab: General
+            label: Visible Linkedin in Social menu Header
+            type: switch
+            default: true
+        linkedin_link:
+            tab: General
+            label: Linkedin
+            type: text
+            default: "https://linkedin.com/"
+        twitter_link_switch:
+            tab: General
+            label: Visible Twitter in Social menu Header
+            type: switch
+            default: true
+        twitter_link:
+            tab: General
+            label: Twitter
+            type: text
+            default: "https://twitter.com"
+        dribbble_link_switch:
+            tab: General
+            label: Visible Dribbble in Social menu Header
+            type: switch
+            default: true
+        dribbble_link:
+            tab: General
+            label: Dribbble
+            type: text
+            default: "https://dribbble.com"
+        behance_link_switch:
+            tab: General
+            label: Visible Behance in Social menu Header
+            type: switch
+            default: true
+        behance_link:
+            tab: General
+            label: Behance
+            type: text
+            default: "https://behance.net"

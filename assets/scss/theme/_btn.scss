@@ -1,0 +1,67 @@
+.button{
+
+  &-blog{
+    display: inline-block;
+    font-size: 14px;
+    color: $black;
+    background: #fff;
+    padding: 8px 25px;
+    text-transform: capitalize;
+    transition: all .5s ease;
+
+    &:hover{
+      color: #fff;
+      background: $primary-color;
+    }
+  }
+
+  &-reply{
+    border: 0;
+  }
+
+  &-postComment{
+    font-size: 14px;
+    padding: 8px 40px !important;
+  }
+
+  &-form{
+    border: 1px solid $primary-color !important;
+    color: $black;
+
+    &:hover{
+      background: transparent;
+      border-color: $primary-color;
+    }
+  }
+
+  &--active:hover{
+    background: transparent;
+    border-color: $primary-color;
+    color: $title-color;
+  }
+
+  &-contact{
+    // border: 0;
+    border: 1px solid $primary-color !important;
+    padding: 9px 30px;
+    background: $primary-color;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: $title-font;
+    text-transform: uppercase;
+
+    &:hover{
+      outline: 0;
+      background: transparent;
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+  }
+
+  // &.home-banner-btn:hover{
+  //   background: transparent;
+  //   border-color: $primary-color;
+  //   color: $title-color;
+  // }
+}

@@ -1,0 +1,171 @@
+/*=================== contact banner start ====================*/
+.contact-banner{
+  position: relative;
+
+  h4,h1,a{
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  h1{
+    font-size: 37px;
+    margin-bottom: 5px;
+
+    @media(min-width: 992px){
+      font-size: 48px;
+    }
+  }
+
+  &-area{
+    height: 380px;
+    background: url('../../assets/images/contact-bg.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    @media(min-width: 600px){
+      height: 500px;
+    }
+
+    @media(min-width: 1000px){
+      height: 625px;
+    }
+
+    .contact-banner{
+      position: absolute;
+      top: 58%;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+    }
+    
+
+
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(1, 2, 11, 0.7);
+      z-index: -1;
+    }
+  }
+
+  &-btn{
+    border:2px solid $primary-color;
+    padding: 10px 45px;
+
+    &:hover{
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+}
+
+.contact-info{
+
+  &__icon{
+    margin-right: 20px;
+
+    i,span{
+      color: $primary-color;
+      font-size: 20px;
+    }
+  }
+
+  .media-body{
+
+    h3{
+      font-size: 16px;
+      margin-bottom: 0;
+
+      a{
+        color: $title-color;
+      }
+    }
+
+    p{
+      color: #999999;
+    }
+  }
+}
+/*=================== contact banner end ====================*/
+
+/*=================== breadcrumb start ====================*/
+.banner-breadcrumb{
+  display: inline-block;
+  
+  .breadcrumb{
+    background: transparent;
+    padding: 0;
+
+    &-item{
+      padding: .1rem;
+
+      a{
+        text-transform: capitalize;
+      }
+
+      &+.breadcrumb-item::before{
+        color: #fff;
+        padding-right: .1rem;
+      }
+
+      &.active{
+        color: #fff;
+      }
+    }
+  }
+}
+/*=================== breadcrumb end ====================*/
+
+
+/*=================== contact form start ====================*/
+.contact_form{
+
+  .form-group{
+    margin-bottom: 10px;
+  }
+
+  input{
+    border-radius: 0;
+    height: 40px;
+    padding-left: 18px;
+    border-color: #EEEEEE;
+
+    &:focus{
+      outline: 0;
+      box-shadow: none;
+    }
+
+    &::placeholder{
+      font-size: 14px;
+      color: #999999;
+    }
+  }
+
+  textarea{
+    border-radius: 0;
+    padding-left: 18px;
+    border-color: #EEEEEE;
+
+    &::placeholder{
+      font-size: 14px;
+      color: #999999;
+    }
+  }
+
+  // button{
+  //   border: 0;
+  // }
+}
+
+/*=================== contact form end ====================*/
