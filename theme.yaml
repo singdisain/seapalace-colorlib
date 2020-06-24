@@ -7,4 +7,3 @@ form: fields.yaml
 
 require:
   - rainlab.blog
-  - devinx.contactus
