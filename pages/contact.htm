@@ -2,6 +2,10 @@ title = "Contact"
 url = "/contact"
 layout = "default"
 is_hidden = 0
+
+[contactForm]
+injectBootstrapAssets = 1
+injectMainScript = 1
 ==
 <!-- ================ start banner area ================= -->
 <section class="contact-banner-area" id="contact">
@@ -81,8 +85,11 @@ is_hidden = 0
                 </div>
             </div>
             <div class="col-md-8 col-lg-9">
-                <form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
-                    novalidate="novalidate">
+                <div class="confirm-container">
+                    <!--This will contain the confirmation when the email is successfully sent-->
+                </div>
+                <form class="flexiContactForm" role="form" data-request="{{ __SELF__ }}::onMailSent"
+                    data-request-update="'{{ __SELF__ }}::confirm': '.confirm-container'">
                     <div class="col-md-6">
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">

@@ -1,5 +1,5 @@
 name: Seapalace
-description: 'Seapalace is a modern, responsive, luxurious and easy to use free Bootstrap Hotel website template.'
+description: 'Free Bootstrap Hotel website template. It''s a Modern, Responsive, Luxurious and Easy to use..'
 author: 'Dodo Jaya Raditya'
 homepage: www.singdisain.com
 code: seapalace-singdisain
@@ -7,4 +7,4 @@ form: fields.yaml
 
 require:
   - rainlab.blog
-  - devinx.contactus
+  - LaminSanneh.FlexiContact
