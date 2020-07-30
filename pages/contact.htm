@@ -12,7 +12,7 @@ injectMainScript = 1
     <div class="container h-100">
         <div class="contact-banner">
             <div class="text-center">
-                <h1>Contact Us</h1>
+                <h1>{{ this.theme.contact_headline }}</h1>
                 <nav aria-label="breadcrumb" class="banner-breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{ 'home'|page }}">Home</a></li>
@@ -28,6 +28,7 @@ injectMainScript = 1
 
 <section class="section-margin">
     <div class="container">
+        {% if this.theme.googlemap_contact_page %}
         <!-- google map start -->
         <div class="d-none d-sm-block mb-5 pb-4">
             <div id="map" style="height: 420px;"></div>
@@ -58,6 +59,7 @@ injectMainScript = 1
 
         </div>
         <!-- google map end -->
+        {% endif %}
 
 
         <div class="row">
@@ -65,22 +67,22 @@ injectMainScript = 1
                 <div class="media contact-info">
                     <span class="contact-info__icon"><i class="ti-home"></i></span>
                     <div class="media-body">
-                        <h3>California United States</h3>
-                        <p>Santa monica bullevard</p>
+                        <h3>{{ this.theme.contact_addr1 }}</h3>
+                        <p>{{ this.theme.contact_addr2 }}</p>
                     </div>
                 </div>
                 <div class="media contact-info">
                     <span class="contact-info__icon"><i class="ti-headphone"></i></span>
                     <div class="media-body">
-                        <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
-                        <p>Mon to Fri 9am to 6pm</p>
+                        <h3><a href="tel:454545654">{{ this.theme.contact_phone }}</a></h3>
+                        <p>{{ this.theme.contact_phone_note }}</p>
                     </div>
                 </div>
                 <div class="media contact-info">
                     <span class="contact-info__icon"><i class="ti-email"></i></span>
                     <div class="media-body">
-                        <h3><a href="mailto:support@colorlib.com">support@colorlib.com</a></h3>
-                        <p>Send us your query anytime!</p>
+                        <h3><a href="mailto:support@colorlib.com">{{ this.theme.contact_email }}</a></h3>
+                        <p>{{ this.theme.contact_email_note }}</p>
                     </div>
                 </div>
             </div>
