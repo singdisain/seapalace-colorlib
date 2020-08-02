@@ -154,3 +154,82 @@ tabs:
             label: Behance
             type: text
             default: "https://behance.net"
+        
+        contact_section:
+            tab: Contact
+            label: Content
+            type: section
+        contact_headline:
+            tab: Contact
+            label: Headline
+            type: text
+            default: CONTACT US
+        contact_banner_section:
+            tab: Contact
+            label: Image Banner
+            type: section
+        contact_banner:
+            tab: Contact
+            comment: Please image size (e.g. 1920 x 450)
+            type: fileupload
+            mode: image
+            imageWidth: 600
+            imageHeight: 240
+        googlemap_section:
+            tab: Contact
+            label: Enable or Disable Google Maps section
+            type: section
+        googlemap_contact_page:
+            tab: Contact
+            label: Visible Google Maps Section
+            type: switch
+            default: true
+        contact_maps_section:
+            tab: Contact
+            label: Maps
+            type: section
+        contact_maps:
+            tab: Contact
+            label: Google Maps iframe src
+            comment: Please just copy the url (e.g. http://..... without iframe tag)
+            type: textarea
+            size: medium
+            default: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14376.077865872314!2d-73.879277264103!3d40.757667781624285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1546528920522
+        contact_addr_section:
+            tab: Contact
+            label: Address
+            type: section
+        contact_addr1:
+            tab: Contact
+            label: Address line 1
+            type: text
+            default: California - United States
+        contact_addr2:
+            tab: Contact
+            label: Address line 2
+            type: text
+            default: Santa monica bullevard
+        contact_phone:
+            tab: Contact
+            span: left
+            label: Phone
+            type: text
+            default: 00 (440) 9865 562
+        contact_email:
+            tab: Contact
+            span: right
+            label: Email
+            type: email
+            default: support@colorlib.com
+        contact_phone_note:
+            tab: Contact
+            span: left
+            label: Phone Note
+            type: text
+            default: Mon to Fri 9am to 6pm
+        contact_email_note:
+            tab: Contact
+            span: right
+            label: Email Note
+            type: text
+            default: Send us your query anytime!
